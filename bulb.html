@@ -1,0 +1,64 @@
+<html>
+    <title>
+        bulbs
+    </title>
+    <head >
+        <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+        <style type="text/css">
+            body{
+                background-color: black;
+                font-family: 'Nothing You Could Do', cursive;
+               }
+            header{
+                text-align: center;
+                color: aliceblue;
+                margin-top: 30px;
+
+            }
+            section{
+
+                display: inline;
+                margin-left: 430px;
+            }
+            p{
+                font-size: x-large;
+            }
+            .image{
+                margin-right: 100px;
+            }
+
+        </style>
+
+        <script>
+            function swap(){
+              
+                var x = document.getElementById("sample1").getAttribute("src");
+                var y = document.getElementById("sample2").getAttribute("src");
+             
+                document.getElementById("sample1").src= y;
+                document.getElementById("sample2").src= x;
+            }
+             
+        </script>
+
+
+    </head>
+    <body>
+        <header>
+        <p>
+            Glowing Bulbs!!..
+        </p >
+        <h1>click of the bulbs to see the magic...</h1>
+
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+            <img class="image" src="unglowing.jpg" onclick="swap() " id="sample1">
+            <img src="glowing.jpg" onclick="swap()" id="sample2">
+
+        </section>
+    </body>
+</html>
